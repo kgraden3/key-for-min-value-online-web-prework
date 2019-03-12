@@ -3,13 +3,8 @@
 
 def key_for_min_value(name_hash)
   name_hash.collect do |key, value|
-    if value == key
-      0
-    elsif value < key
-      -1
-    elsif value > key
-      1
+    if key == value
+
     end
   end
-  name_hash.first
 end
